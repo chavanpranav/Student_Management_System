@@ -14,7 +14,9 @@ const connection = require("./sqlNodeConnection/db");
 app.use(express.static(path.join(__dirname, "public")));
 
 const studentRoutes = require("./routes/studentRoutes");
+const homePageRoute = require("./routes/homePageRoute");
 
+app.use("/", homePageRoute);
 app.use("/students", studentRoutes);
 
 
