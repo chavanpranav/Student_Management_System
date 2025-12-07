@@ -41,7 +41,9 @@
                 <a href="/students/edit/<%= student.id %>">
                     <button>Edit</button>
                 </a>
-                <button>Delete</button>
+                <form method="post" action="/students/<%= student.id %>?_method=Delete">
+                    <button>Delete</button>
+                </form>
             </td>
         </tr>
         <% } %>

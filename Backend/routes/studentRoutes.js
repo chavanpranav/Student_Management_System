@@ -104,6 +104,24 @@ router.post("/", (req, res) => {
 });
 
 
+//delete student
+
+router.delete("/:id", (req, res) =>{
+    let {id} = req.params;
+    let q7 = `DELETE FROM students WHERE id = ${id}`;
+
+    try {
+
+        connection.query(q7, (err, result) =>{
+            if(err) throw err;
+
+            res.redirect("/students");
+        });
+    }catch(err) {
+        console.log("error");
+    }
+});
+
 
 
 module.exports = router;
