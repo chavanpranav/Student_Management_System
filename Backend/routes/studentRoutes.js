@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
 });
 
 //show student details
-router.get("/:id", (req, res) => {
+router.get("/view/:id", (req, res) => {
 
     let {id} = req.params;
     let q2 = `SELECT * FROM STUDENTS WHERE id = '${id}'`;
@@ -43,7 +43,7 @@ router.get("/:id", (req, res) => {
 });
 
 //edit student 
-router.get("/:id/edit", (req, res) => {
+router.get("/edit/:id", (req, res) => {
     let {id} = req.params;
     let q3 = `SELECT * FROM students WHERE id = ${id}`;
 
@@ -86,8 +86,22 @@ router.patch("/:id", (req, res) => {
 
 
 
+//add student form
+router.get("/new", (req, res) => {
+    res.render("new");
+});
 
+router.post("/", (req, res) => {
+    let {name, email, age, course, phone} = req.body;
 
+    let q6 = `INSERT INTO students (name, email, age, course, phone) VALUES (?, ?, ?, ?, ?)`;
+    let values = [name, email, age, course, phone];
+
+    connection.query(q6, values, (err, result) => {
+        if (err) throw err;
+        res.redirect("/students");
+    });
+});
 
 
 

@@ -12,7 +12,7 @@
     <h1>Students List:</h1> 
     <p>Total Students : <%= studentsCnt %></p>
     <div id = "addstudent">
-        <form action="/students/newStudent", method="post">
+        <form action="/students/new", method="get">
         <button>Add Student</button>
     </form>
     </div>
@@ -35,10 +35,10 @@
             <td><%= student.course %></td>
             <td><%= student.phone %></td>
             <td>
-                <a href="/students/<%= student.id %>">
+                <a href="/students/view/<%= student.id %>">
                     <button>Detail</button>
                 </a>
-                <a href="/students/<%= student.id %>/edit">
+                <a href="/students/edit/<%= student.id %>">
                     <button>Edit</button>
                 </a>
                 <button>Delete</button>
