@@ -1,2 +1,87 @@
-# Student_Management_System
-A Student Management System built using Node.js, Express, EJS, and MySQL with secure REST APIs for full CRUD operations.
+# Student Management System
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-v16+-green)](https://nodejs.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-database-blue)](https://www.mysql.com/)
+
+## Project Overview
+The **Student Management System** is a web-based application built with **Node.js, Express, EJS**, and **MySQL**.  
+It allows managing student records with full **CRUD** functionality (Create, Read, Update, Delete) through a simple web interface.
+
+## Features
+| Feature | Description |
+|---------|-------------|
+| Add Student | Add new student records |
+| Detail Students | List all students with details |
+| Edit Student | Update student information |
+| Delete Student | Remove student records |
+| EJS Templates | Server-side rendered pages |
+| REST Routes | Organized REST-style routing |
+| Database | MySQL integration for persistent storage |
+| Sample Data | Optional Faker/UUID generated data |
+
+---
+
+
+## Technologies Used
+- **Backend:** Node.js, Express  
+- **Templating:** EJS  
+- **Database:** MySQL (`mysql2`)  
+- **Additional Packages:**  
+  - `method-override` for PUT/DELETE form support  
+  - `@faker-js/faker` and `uuid` for generating sample data  
+
+## Installation & Setup
+1. Ensure **Node.js (v16+)** is installed and MySQL server is running.  
+2. Clone the repository and navigate to the backend folder:
+
+```bash
+git clone https://github.com/yourusername/Student_Management_System.git
+cd Backend
+npm install
+
+```
+## Configure your database connection in Backend/sqlNodeConnection/db.js:
+
+```bash
+
+// Example:
+host: 'localhost',
+user: 'root',
+password: 'your_password',
+database: 'student_db'
+```
+
+## Generate sample student data:
+
+```bash
+node Backend/dataGen/studentGen.js
+```
+
+## Running the Application
+
+-   Start the server:
+
+```bash
+npm start
+```
+
+-   For development with automatic restarts (requires nodemon):
+```bash
+npm run dev
+```
+
+-   Open your browser and visit http://localhost:8080 (port: 8080/ 3000)
+
+-   Use the web interface to manage student records easily.
+
+---
+## License
+
+-   This project is licensed under the MIT License. See the LICENSE file for details.
+---
+
+
+## Screenshots
+
+![alt text](image.png)
