@@ -49,7 +49,7 @@ npm install
 host: 'localhost',
 user: 'root',
 password: 'your_password',
-database: 'student_db'
+database: 'school'
 ```
 
 ## Generate sample student data:
