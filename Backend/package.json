@@ -16,7 +16,9 @@
     "express": "^5.2.1",
     "method-override": "^3.0.0",
     "mysql2": "^3.15.3",
-    "node": "^20.19.6",
     "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

@@ -58,6 +58,13 @@ database: 'school'
 node Backend/dataGen/studentGen.js
 ```
 
+## Again:
+
+```bash
+cd Backend
+
+```
+
 ## Running the Application
 
 -   Start the server:
@@ -76,6 +83,29 @@ npm run dev
 -   Use the web interface to manage student records easily.
 
 ---
+
+
+## Application Routes
+
+| Route                | Method | Description               |
+| -------------------- | ------ | ------------------------- |
+| `/students`          | GET    | View all students         |
+| `/students/new`      | GET    | Form to add a new student |
+| `/students`          | POST   | Create a new student      |
+| `/students/:id`      | GET    | View student details      |
+| `/students/:id/edit` | GET    | Edit student form         |
+| `/students/:id`      | PUT    | Update student            |
+| `/students/:id`      | DELETE | Delete student            |
+
+##  Example URL (View All Students)
+After starting the server, open:
+```bash
+http://localhost:8080/students
+```
+This route displays all student records stored in the MySQL database.
+
+
+
 ## License
 
 -   This project is licensed under the MIT License. See the LICENSE file for details.
