@@ -29,14 +29,20 @@ It allows managing student records with full **CRUD** functionality (Create, Rea
   - `@faker-js/faker` and `uuid` for generating sample data  
 
 ## Installation & Setup
-1. Ensure **Node.js (v16+)** is installed and MySQL server is running.  
-2. Clone the repository and navigate to the backend folder:
+1. Ensure **Node.js (v16+)** is installed and **MySQL** server is running.  
 
+# Option 1: Clone from GitHub (Recommended)
 ```bash
 git clone https://github.com/yourusername/Student_Management_System.git
-cd Backend
+cd Student_Management_System/Backend
 npm install
-
+```
+# Option 2: Use Downloaded ZIP
+# 1. Download the ZIP from GitHub and extract it
+# 2. Navigate to the backend folder of the extracted project
+```bash
+cd path_to_extracted_folder/Student_Management_System/Backend
+npm install
 ```
 
 ## Database Schema
