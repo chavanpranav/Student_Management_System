@@ -1,8 +1,5 @@
 # Student Management System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-v16+-green)](https://nodejs.org/)
-[![MySQL](https://img.shields.io/badge/MySQL-database-blue)](https://www.mysql.com/)
 
 ## Project Overview
 The **Student Management System** is a web-based application built with **Node.js, Express, EJS**, and **MySQL**.  
