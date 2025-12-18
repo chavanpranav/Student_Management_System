@@ -38,6 +38,23 @@ cd Backend
 npm install
 
 ```
+
+## Database Schema
+
+```sql
+CREATE DATABASE IF NOT EXISTS school;
+USE school;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    age INT,
+    course VARCHAR(50),
+    phone VARCHAR(20)
+);
+```
+
 ## Configure your database connection in Backend/sqlNodeConnection/db.js:
 
 ```bash
@@ -52,14 +69,7 @@ database: 'school'
 ## Generate sample student data:
 
 ```bash
-node Backend/dataGen/studentGen.js
-```
-
-## Again:
-
-```bash
-cd Backend
-
+node dataGen/studentGen.js
 ```
 
 ## Running the Application
